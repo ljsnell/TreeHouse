@@ -54,6 +54,10 @@
                             <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtg-IK-ePc">
                                 <rect key="frame" x="0.0" y="246" width="768" height="216"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z01-DM-Ng7" id="aTR-x3-Szc"/>
+                                    <outlet property="delegate" destination="z01-DM-Ng7" id="U2l-pB-nlH"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-yB-RzH">
                                 <rect key="frame" x="368" y="897" width="32" height="30"/>
@@ -89,9 +93,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ethnicity" id="3jC-e9-WeC"/>
-                    <connections>
-                        <outlet property="ethnicityPicker" destination="jtg-IK-ePc" id="7km-jh-Cfg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvW-XQ-EMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,8 +321,12 @@
                                 </state>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmN-Ko-Iga">
-                                <rect key="frame" x="0.0" y="628" width="768" height="216"/>
+                                <rect key="frame" x="0.0" y="624" width="768" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="v4i-f4-n80" id="3Sl-yO-WUT"/>
+                                    <outlet property="delegate" destination="v4i-f4-n80" id="vpF-Cs-9X1"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
