@@ -53,7 +53,7 @@
                             </label>
                             <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtg-IK-ePc">
                                 <rect key="frame" x="0.0" y="246" width="768" height="216"/>
-                                <color key="tintColor" red="1" green="0.072281922410000005" blue="0.15760957959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-yB-RzH">
                                 <rect key="frame" x="368" y="897" width="32" height="30"/>
@@ -89,6 +89,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ethnicity" id="3jC-e9-WeC"/>
+                    <connections>
+                        <outlet property="ethnicityPicker" destination="jtg-IK-ePc" id="7km-jh-Cfg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvW-XQ-EMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -461,7 +464,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5b4-UV-dgO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5b4-UV-dgO">
                                 <rect key="frame" x="148" y="281" width="146" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="y2C-d3-4kh"/>
@@ -469,7 +472,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-iJ-5ZU">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-iJ-5ZU">
                                 <rect key="frame" x="586" y="281" width="131" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="WHb-9R-s28"/>
